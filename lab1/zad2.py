@@ -5,33 +5,27 @@ import matplotlib.pyplot as plt
 
 def calculate_distance(angle):
     
-    g = 9.81  # Przyspieszenie ziemskie [m/s^2]
-    h = 100   # Wysokość trebusza [m]
-    v0 = 50   # Początkowa prędkość pocisku [m/s]
+    g = 9.81  
+    h = 100  
+    v0 = 50   
     
     angle_rad = math.radians(angle)
     
-    #time of flight to the ground
     t = (v0 * math.sin(angle_rad) + math.sqrt((v0 * math.sin(angle_rad)) ** 2 + 2 * g * h)) / g
-    
-    #maximum distance of the projectile
+
     d = v0 * math.cos(angle_rad) * t
     
     return d, t
 
 def plot_trajectory(angle, time):
-    g = 9.81  # Przyspieszenie ziemskie [m/s^2]
-    v0 = 50   # Początkowa prędkość pocisku [m/s]
+    g = 9.81  
+    v0 = 50   
     
     angle_rad = math.radians(angle)
     
-    # Czas lotu do ziemi
     t = time
-    
-    # Czas równomiernie rozmieszczony w celu rysowania trajektorii
     times = [i * t / 100 for i in range(101)]
     
-    # Trajektoria x i y
     x_values = [v0 * math.cos(angle_rad) * t for t in times]
     y_values = [v0 * math.sin(angle_rad) * t - 0.5 * g * t**2 for t in times]
     

@@ -72,11 +72,11 @@ def main():
     
     for name, value in biorythms:
         if value > 0.5:
-            print(f"Congratulations! Your {name} biorhythm is high today.")
+            print(f"Congratulations! Your {name} biorhythm is high today. Value: {round(value, 2)}")
         elif value < -0.5:
-            print(f"Don't worry. It's just a bad day for your {name} biorhythm.")
+            print(f"Don't worry. It's just a bad day for your {name} biorhythm. Value: {round(value, 2)}")
         else:
-            print(f"Your {name} biorhythm is neutral today.")
+            print(f"Your {name} biorhythm is neutral today. Value: {round(value, 2)}")
 
 if __name__ == "__main__":
     main()  
