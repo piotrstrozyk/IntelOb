@@ -9,7 +9,7 @@ datasets = train_test_split(iris.data, iris.target,
                             test_size=0.3)
 
 train_data, test_data, train_labels, test_labels = datasets
-print(iris)
+
 # b)  etykiety klas są reprezentowane jako liczby całkowite od 0 do 2, które odpowiadają różnym gatunkom irysów:
 
     # 0 odpowiada gatunkowi Iris-setosa
