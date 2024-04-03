@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 
+
 def grayscale_avg(image):
     gray = np.mean(image, axis=2)
     return gray.astype(np.uint8)

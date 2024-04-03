@@ -2,3 +2,4 @@
 /lab5/dogs-cats-mini
 *.keras
 *.h5
+*.venv
