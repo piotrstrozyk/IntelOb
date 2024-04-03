@@ -53,7 +53,7 @@ plt.figure(figsize=(10, 7))
 sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
 plt.xlabel('Predicted')
 plt.ylabel('True')
-plt.title('Confusion Matrix')
+plt.title('Confusi')
 plt.show()
 
 # Plotting training and validation accuracy
