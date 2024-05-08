@@ -4,3 +4,7 @@
 *.h5
 */.venv
 /lab6/zad4/images
+/project/annotated_samples
+/project/crop/A10
+/project/crop
+/project/dataset
