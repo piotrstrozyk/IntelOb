@@ -1,11 +1,13 @@
 
-/lab5/dogs-cats-mini
+/lab1-7/lab5/dogs-cats-mini
 *.keras
 *.h5
 */.venv
-/lab6/zad4/images
-/project/annotated_samples
-/project/crop/A10
-/project/crop
-/project/dataset
+/lab1-7/lab6/zad4/images
+/lab1-7/lab6/zad4/resized
+*/resized.zip
+/image-recognition-project/annotated_samples
+/image-recognition-project/crop/A10
+/image-recognition-project/crop
+/image-recognition-project/dataset
 *.hdf5
